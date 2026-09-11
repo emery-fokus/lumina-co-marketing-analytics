@@ -1,6 +1,6 @@
 # Lumina & Co — Data Marketing (DIA2)
 
-Analyse du CRM de Lumina & Co (cosmétiques) : nettoyage, EDA et segmentation client, sur deux journées de travail.
+Analyse du CRM de Lumina & Co (cosmétiques) : nettoyage, EDA, segmentation client et attribution multicanal, sur trois journées de travail — en vue d'une restitution de 10 minutes au CMO.
 
 ## Contexte
 
@@ -24,6 +24,24 @@ Consigne d'origine : [TP1 - EDA & Nettoyage du dataset Lumina & Co.md](<TP1 - ED
 - Bonus : adaptation de la méthode à une petite base, croisement RFM × données zero-party.
 
 Consigne d'origine : [TP2 - Segmentation RFM & Lumina & Co.pdf](<TP2 - Segmentation RFM & Lumina & Co.pdf>)
+
+### [TP3 - KPIs par canal - Lumina & Co.ipynb](<TP3 - KPIs par canal - Lumina & Co.ipynb>)
+- CAC, CPA, ROAS et taux de conversion par canal marketing, à partir de `campaigns.csv` et `touchpoints.csv`.
+- Réconciliation des deux fichiers, détection des primo-achats (méthode : date de facture vs `first_purchase`) pour isoler le CAC du CPA.
+- Discussion des vanity metrics, et du fait que `display`/`social` totalisent 58 % du volume de contacts mais 0 conversion mesurée en dernier-clic.
+- Bonus : estimation de la CLTV par canal et ratio LTV:CAC.
+
+### [TP3 - Attribution Multicanal - Lumina & Co.ipynb](<TP3 - Attribution Multicanal - Lumina & Co.ipynb>)
+- Comparaison des modèles d'attribution *first touch* et *last touch*, avec répartition du crédit de conversion par canal (% et valeur).
+- Mise en évidence d'une séparation quasi parfaite entre canaux de découverte (`display`, `social`) et canaux de closing (`affiliate`, `retargeting`, `direct`, `email`, `search_paid`).
+- Limite de données documentée : troncature des parcours convertis (effet de fenêtre d'observation), avec impact chiffré sur la fiabilité du *first touch*.
+- Recommandation argumentée : modèle multi-touch plutôt qu'un modèle à un seul point de contact.
+
+Consigne d'origine : [TP3 - Attribution Multicanal Lumina & Co - v2.pdf](<TP3 - Attribution Multicanal Lumina & Co - v2.pdf>)
+
+## Présentation finale
+
+Restitution de 10 minutes au CMO (+ 10 minutes de questions), couvrant : contexte et problématique, segmentation client, KPIs de campagne et attribution, synthèse et plan d'action, limites et confiance dans la data — avec la logique WHAT? → SO WHAT? → NOW WHAT? comme fil conducteur (méthode détaillée dans [DATA STORYTELLING - DIA2 - septembre 2026 (V2).pdf](<DATA STORYTELLING -  DIA2 - septembre 2026 (V2).pdf>)).
 
 ## Données
 
